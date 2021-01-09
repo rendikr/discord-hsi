@@ -3,7 +3,7 @@ const ping = {
   description: 'Ping the bot',
   cooldown: 5,
   execute(message, args) {
-    message.reply(`Pong! Server ini memakai reginal ${message.guild.region}.`)
+    message.reply(`Pong! Server ini memakai regional ${message.guild.region}.`)
   }
 }
 
