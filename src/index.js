@@ -3,12 +3,20 @@ const fs = require('fs')
 const Discord = require('discord.js')
 const client = new Discord.Client()
 client.commands = new Discord.Collection()
+const request = require('request')
 const chatPrefix = process.env.MESSAGE_PREFIX || '!!'
 const discordToken = process.env.DISCORD_TOKEN
 const port = process.env.PORT
 
 client.once('ready', () => {
   console.log('Discord Client Ready!')
+
+  var reqTimer = setTimeout(function wakeUp() {
+    request(process.env.BOT_URL, function() {
+       console.log("WAKE UP DYNO");
+    });
+    return reqTimer = setTimeout(wakeUp, 1200000);
+ }, 1200000);
 });
 
 client.login(discordToken)

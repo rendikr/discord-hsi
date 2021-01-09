@@ -30,7 +30,8 @@
   "homepage": "https://github.com/rendikr/discord-hsi#readme",
   "dependencies": {
     "discord.js": "^12.5.1",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "request": "^2.88.2"
   },
   "devDependencies": {
     "env-cmd": "^10.1.0",

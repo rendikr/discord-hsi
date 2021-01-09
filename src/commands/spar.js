@@ -11,7 +11,6 @@ const spar = {
       return message.reply(`Bro, kasih info tambahan ya. Contohnya gini:\n**!!spar <complete voice channel name> <player per team>**. Silahkan ulangi perintahnya :)`)
     }
 
-    console.log(`[ +++ args.length] : ${args.length}`)
     // get the spar channel name
     let voiceChannelName = ''
     for (const index in args) {
