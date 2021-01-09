@@ -1,0 +1,39 @@
+{
+  "name": "hsi-bot",
+  "version": "1.0.0",
+  "description": "Hunt Indo Discord Bot - For Indonesian Hunt Showdown Players Bot",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "env-cmd nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/rendikr/discord-hsi.git"
+  },
+  "keywords": [
+    "hunt",
+    "showdown",
+    "discord",
+    "bot",
+    "indonesia",
+    "indonesian",
+    "player",
+    "scrim",
+    "spar"
+  ],
+  "author": "Rendi K.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rendikr/discord-hsi/issues"
+  },
+  "homepage": "https://github.com/rendikr/discord-hsi#readme",
+  "dependencies": {
+    "discord.js": "^12.5.1",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "env-cmd": "^10.1.0",
+    "nodemon": "^2.0.6"
+  }
+}
